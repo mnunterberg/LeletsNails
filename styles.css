@@ -6,10 +6,12 @@ font-size: 18px;
 
 h1 {
   font-size: 2em;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.6em;
+  text-align: center;
 }
 * {
   margin: 10;
@@ -37,17 +39,6 @@ h2 {
   display: flex;
   justify-content: flex-end;
 }
-
-.login {
-  margin-left: 20px;
-}
-.header-container {
-  color: #5995DA;
-  background-color: #D6E9FE;
-  display: flex;
-  justify-content: center;
-}
-
 .header {
   width: 900px;
   height: 300px;
@@ -63,12 +54,28 @@ h2 {
 .photo-grid {
   width: 900px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;    /* Change this */
+  flex-wrap: wrap;
+  align-items: center;      /* Add this */
+
 }
 
 .photo-grid-item {
   border: 1px solid #fff;
   width: 300px;
   height: 300px;
+}
+.footer {
+  display: flex;
+  justify-content: left;
+  align-items: center;      /* Add this */
+}
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+  align-items: center;      /* Add this */
+
 }
 
