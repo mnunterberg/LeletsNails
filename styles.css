@@ -2,6 +2,7 @@ body {
     color: #000080;             
 background-color: #FFD700;
 font-size: 18px;
+font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -18,22 +19,6 @@ h2 {
   padding: 10;
   box-sizing: border-box;
 }
-
-.menu-container {
-  color: #fff;
-  background-color: #5995DA;  /* Blue */
-  padding: 20px 0;
-    /* ... */
-    display: flex;
-    justify-content: center;    /* Add this */
-  }
-
-.menu {
-    border: 1px solid #fff;
-    width: 900px;
-    display: flex;
-    justify-content: space-around;
-}
 .links {
   border: 1px solid #fff;  /* For debugging */
   display: flex;
@@ -46,6 +31,15 @@ h2 {
   justify-content: space-between;
   align-items: center;  /* Add this */
 }
+.bordered-image {
+  border: 2px solid #333; /* border width, style, and color */
+  border-radius: 8px; /* border corner radius */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* optional: add a shadow effect */
+}
+.image-container {
+  text-align: center;
+}
+
 .photo-grid-container {
   display: flex;
   justify-content: center;
@@ -61,9 +55,14 @@ h2 {
 }
 
 .photo-grid-item {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   width: 300px;
   height: 300px;
+}
+
+img {
+  max-width: 100%; /* Set the maximum width */
+  height: auto; /* Maintain aspect ratio */
 }
 .footer {
   display: flex;
