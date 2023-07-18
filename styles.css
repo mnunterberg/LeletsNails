@@ -11,5 +11,27 @@ h1 {
 h2 {
   font-size: 1.6em;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+    /* ... */
+    display: flex;
+    justify-content: center;    /* Add this */
+  }
+
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+
     
 
